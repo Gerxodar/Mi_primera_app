@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.UserInfoActivity">
+
+    <Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="64dp"
+        android:background="@color/green"
+        android:title="@string/login_application"
+        android:titleTextColor="@color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/tvUsername"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:text="Username 100% real no fake"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        android:layout_marginTop="100dp"
+        />
+
+
+    <TextView
+        android:id="@+id/tvUserinfo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/userinfo"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvUsername"
+        android:layout_marginTop="60dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        />
+
+    <TextView
+        android:id="@+id/tvFullname"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/fullname"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tvInputfullname"
+        app:layout_constraintTop_toBottomOf="@id/tvUserinfo"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="30dp"
+        />
+
+    <TextView
+        android:id="@+id/tvInputfullname"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:text="Germán Sánchez Casas"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvUserinfo"
+        app:layout_constraintStart_toEndOf="@id/tvFullname"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        />
+
+    <TextView
+        android:id="@+id/tvEdad"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/edad"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tvInputfullname"
+        app:layout_constraintTop_toBottomOf="@id/tvUserinfo"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="30dp"
+        />
+
+    <TextView
+        android:id="@+id/tvInputedad"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:text="19"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvUserinfo"
+        app:layout_constraintStart_toEndOf="@id/tvFullname"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="30dp"
+        />
+
+    <TextView
+        android:id="@+id/tvTelf"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/telf"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tvInputfullname"
+        app:layout_constraintTop_toBottomOf="@id/tvUserinfo"
+        android:layout_marginTop="80dp"
+        android:layout_marginStart="30dp"
+        />
+
+    <TextView
+        android:id="@+id/tvInputtelf"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:text="662601388"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvUserinfo"
+        app:layout_constraintStart_toEndOf="@id/tvFullname"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="30dp"
+        />
+
+    <Button
+        android:id="@+id/btVolver"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/volver"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTelf"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="150dp"
+        android:layout_marginEnd="150dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginBottom="50dp"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
